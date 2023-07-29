@@ -1,0 +1,29 @@
+:root {
+    --text-color: #fff;
+    --bg-url: url(../assets/bg-desktop.jpg);
+    --btn-svg: url(../assets/moon-stars.svg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --surface-hover-color: rgba(255, 255, 255, 0.05);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+.light {
+    --text-color: #000;
+    --bg-url: url(../assets/bg-desktop-light.jpg);
+    --btn-svg: url(../assets/sun.svg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-hover-color: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    :root{
+        --bg-url: url(../assets/bg-mobile.jpg);
+    }
+
+    .light {
+        --bg-url: url(../assets/bg-mobile-light.jpg);
+    }
+}
